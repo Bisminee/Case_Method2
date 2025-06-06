@@ -9,5 +9,7 @@ public class TransaksiPengisian {
         this.totalBayar = totalBayar;
     }
 
-    
+    public void bayar(){
+        
+    }
 }
