@@ -1,4 +1,6 @@
+
 public class Kendaraan {
+
     String platNomor, tipe, merk;
 
     public Kendaraan(String platNomor, String tipe, String merk) {
@@ -7,7 +9,7 @@ public class Kendaraan {
         this.merk = merk;
     }
 
-    void tampilkanInformasiKendaraan(){
+    void tampilkanInformasiKendaraan() {
         System.out.println("\nPlat Nomor\t\tTipe Kendaraan\t\tMerk HP");
         System.out.println(platNomor + "\t\t" + tipe + "\t\t" + merk);
     }

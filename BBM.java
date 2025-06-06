@@ -1,4 +1,6 @@
+
 public class BBM {
+
     String namaBBM;
     double hargaPerLiter;
 
@@ -7,5 +9,4 @@ public class BBM {
         this.hargaPerLiter = hargaPerLiter;
     }
 
-    
 }
