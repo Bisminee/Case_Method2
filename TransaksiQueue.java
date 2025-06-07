@@ -34,13 +34,13 @@ public class TransaksiQueue {
         if (IsEmpty()) {
             System.out.println("Queue masih kosong");
         } else {
+            System.out.println("-\n-- Riwayat Transaksi ---");
             int i = front;
             while (i != rear) {
-                System.out.println(data[i] + " ");
+                System.out.println(data[i].kendaraan.platNomor + ": " + (data[i].bbm.hargaPerLiter * data[i].liter));
                 i = (i + 1) % max;
             }
-            System.out.println(data[i] + " ");
-            System.out.println("Jumlah elemen = " + size);
+            System.out.println(data[i].kendaraan.platNomor + ": " + (data[i].bbm.hargaPerLiter * data[i].liter));
         }
     }
 
