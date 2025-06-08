@@ -13,10 +13,14 @@ public class LinkedListAntrian {
         return (transaksi.IsFull());
     }
 
-    int count() { // Menghitung Jumlah Antrian
+    int count() {
         NodeAntrianLinkedList tmp = head;
-        int count = 1;
-        while (tmp.next != null) {
+            if (tmp == null) {
+            System.out.println("Antrian kosong");
+            return 0;
+        }
+        int count = 0;
+        while (tmp != null) {
             count++;
             tmp = tmp.next;
         }
@@ -42,6 +46,7 @@ public class LinkedListAntrian {
         if (!isEmpty()) {
             NodeAntrianLinkedList tmp = head;
             System.out.println("\n --- Antrian Kendaraan ---");
+
             while (tmp != null) {
                 tmp.data.tampilkanInformasiKendaraan();
                 tmp = tmp.next;

@@ -30,7 +30,6 @@ public class Main {
                     break;
                 case 4:
                     System.out.println("Petugas melayani " + antri.head.data.platNomor);
-                    antri.head = antri.head.next;
                     System.out.print("Masukkan Jenis BBM: ");
                     String jenisBBM = sc.nextLine();
                     System.out.print("Masukkan Harga Per Liter: ");
@@ -38,6 +37,7 @@ public class Main {
                     System.out.print("Masukkan Jumlah Liter: ");
                     double liter = sc.nextDouble();
                     riwayatTransaksi.Enqueue(new TransaksiPengisian(antri.head.data, new BBM(jenisBBM, hargaPerLiter), (hargaPerLiter * liter), liter));
+                    antri.head = antri.head.next;
                     break;
                 case 5:
                     riwayatTransaksi.print();
