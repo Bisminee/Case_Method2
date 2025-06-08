@@ -11,4 +11,27 @@ public class TransaksiPengisian {
         this.totalBayar = totalBayar;
         this.liter = liter;
     }
+
+    public Kendaraan getKendaraan() {
+        return kendaraan;
+    }
+
+    public BBM getbbm () {
+        return bbm;
+    }
+
+    public double getLiter() {
+        return liter;
+    }
+
+    public double gettotalBayar() {
+        return totalBayar;
+    }
+
+    public void tampilTransaksi() {
+        System.out.println(kendaraan.getPlatNomor() +
+        " - " + bbm.getNamaBBM() +
+        " - " + liter + " liter " +
+        ": Rp " + totalBayar);
+    }
 }

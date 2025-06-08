@@ -9,6 +9,10 @@ public class Kendaraan {
         this.merk = merk;
     }
 
+    public String getPlatNomor() {
+    return this.platNomor;
+    }
+
     void tampilkanInformasiKendaraan() {
         System.out.println("Plat Nomor     :" + platNomor + "\nTipe Kendaraan : " + tipe + "\nMerk           : " + merk);
         System.out.println("-----------------------");
