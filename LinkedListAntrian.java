@@ -16,7 +16,6 @@ public class LinkedListAntrian {
     int count() {
         NodeAntrianLinkedList tmp = head;
             if (tmp == null) {
-            System.out.println("Antrian kosong");
             return 0;
         }
         int count = 0;
