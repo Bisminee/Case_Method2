@@ -10,7 +10,7 @@ public class Kendaraan {
     }
 
     void tampilkanInformasiKendaraan() {
-        System.out.println("\nPlat Nomor\t\tTipe Kendaraan\t\tMerk HP");
-        System.out.println(platNomor + "\t\t" + tipe + "\t\t" + merk);
+        System.out.println("Plat Nomor     :" + platNomor + "\nTipe Kendaraan : " + tipe + "\nMerk           : " + merk);
+        System.out.println("-----------------------");
     }
 }

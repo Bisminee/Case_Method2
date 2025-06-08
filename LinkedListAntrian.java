@@ -1,12 +1,9 @@
 
-import java.util.Scanner;
-
-public class LinkedListAntrian {
+public class LinkedListAntrian { 
 
     NodeAntrianLinkedList head;
     NodeAntrianLinkedList tail;
     TransaksiQueue transaksi;
-    Scanner sc = new Scanner(System.in);
 
     boolean isEmpty() {
         return (head == null);
@@ -16,9 +13,9 @@ public class LinkedListAntrian {
         return (transaksi.IsFull());
     }
 
-    int count() {
+    int count() { // Menghitung Jumlah Antrian
         NodeAntrianLinkedList tmp = head;
-        int count = 0;
+        int count = 1;
         while (tmp.next != null) {
             count++;
             tmp = tmp.next;
@@ -26,7 +23,7 @@ public class LinkedListAntrian {
         return count;
     }
 
-    public void tambahAntrian(Kendaraan input) {
+    public void tambahAntrian(Kendaraan input) { // Add last
         NodeAntrianLinkedList ndBaru = new NodeAntrianLinkedList(input, null);
         if (isEmpty()) {
             head = ndBaru;
@@ -49,13 +46,12 @@ public class LinkedListAntrian {
                 tmp.data.tampilkanInformasiKendaraan();
                 tmp = tmp.next;
             }
-            System.out.println("");
         } else {
             System.out.println("Antrian Masih Kosong");
         }
     }
 
-    public void layaniKendaraan(TransaksiPengisian input) {
+    public void layaniKendaraan(TransaksiPengisian input) { 
         if (head == tail) {
             transaksi.Enqueue(input);
             head = tail = null;

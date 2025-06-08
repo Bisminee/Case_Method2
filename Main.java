@@ -9,14 +9,7 @@ public class Main {
         TransaksiQueue riwayatTransaksi = new TransaksiQueue();
         int pilihan;
         do {
-            System.out.println("\n --- MENU SPBU --- ");
-            System.out.println("1. Tambah Antrian Kendaraan");
-            System.out.println("2. Tampilkan Antrian");
-            System.out.println("3. Cek Jumlah Antrian");
-            System.out.println("4. Layani Kendaraan");
-            System.out.println("5. Tampilkan Riwayat Transaksi");
-            System.out.println("0. Keluar");
-            System.out.print("Pilih: ");
+            menu();
             pilihan = sc.nextInt();
             sc.nextLine();
             switch (pilihan) {
@@ -37,6 +30,7 @@ public class Main {
                     break;
                 case 4:
                     System.out.println("Petugas melayani " + antri.head.data.platNomor);
+                    antri.head = antri.head.next;
                     System.out.print("Masukkan Jenis BBM: ");
                     String jenisBBM = sc.nextLine();
                     System.out.print("Masukkan Harga Per Liter: ");
@@ -55,5 +49,16 @@ public class Main {
                     System.out.println("Pilihan Tidak Valid");
             }
         } while (pilihan >= 1 && pilihan <= 5);
+    }
+
+    public static void menu() {
+        System.out.println("\n --- MENU SPBU --- ");
+        System.out.println("1. Tambah Antrian Kendaraan");
+        System.out.println("2. Tampilkan Antrian");
+        System.out.println("3. Cek Jumlah Antrian");
+        System.out.println("4. Layani Kendaraan");
+        System.out.println("5. Tampilkan Riwayat Transaksi");
+        System.out.println("0. Keluar");
+        System.out.print("Pilih: ");
     }
 }

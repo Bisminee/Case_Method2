@@ -1,5 +1,5 @@
 
-public class TransaksiQueue {
+public class TransaksiQueue { 
 
     TransaksiPengisian data[];
     int front;
@@ -34,13 +34,13 @@ public class TransaksiQueue {
         if (IsEmpty()) {
             System.out.println("Queue masih kosong");
         } else {
-            System.out.println("-\n-- Riwayat Transaksi ---");
+            System.out.println("\n--- Riwayat Transaksi ---");
             int i = front;
             while (i != rear) {
-                System.out.println(data[i].kendaraan.platNomor + ": " + (data[i].bbm.hargaPerLiter * data[i].liter));
+                System.out.println(data[i].kendaraan.platNomor + "  : Rp" + (data[i].bbm.hargaPerLiter * data[i].liter));
                 i = (i + 1) % max;
             }
-            System.out.println(data[i].kendaraan.platNomor + ": " + (data[i].bbm.hargaPerLiter * data[i].liter));
+            System.out.println(data[i].kendaraan.platNomor + "  : Rp" + (data[i].bbm.hargaPerLiter * data[i].liter));
         }
     }
 
@@ -57,10 +57,10 @@ public class TransaksiQueue {
                 } else {
                     rear++;
                 }
-
             }
             data[rear] = dt;
             size++;
+            System.out.println(">> Transaksi berhasil dicatat.");
             return true;
         }
     }
