@@ -1,5 +1,5 @@
 
-public class TransaksiQueue { 
+public class TransaksiQueue {
 
     TransaksiPengisian data[];
     int front;

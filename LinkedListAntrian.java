@@ -1,5 +1,5 @@
 
-public class LinkedListAntrian { 
+public class LinkedListAntrian {
 
     NodeAntrianLinkedList head;
     NodeAntrianLinkedList tail;
@@ -55,7 +55,7 @@ public class LinkedListAntrian {
         }
     }
 
-    public void layaniKendaraan(TransaksiPengisian input) { 
+    public void layaniKendaraan(TransaksiPengisian input) {
         if (head == tail) {
             transaksi.Enqueue(input);
             head = tail = null;

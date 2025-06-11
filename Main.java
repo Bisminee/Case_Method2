@@ -5,7 +5,7 @@ public class Main {
 
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        LinkedListAntrian antri = new  LinkedListAntrian();
+        LinkedListAntrian antri = new LinkedListAntrian();
         TransaksiQueue riwayatTransaksi = new TransaksiQueue();
         int pilihan;
         do {
@@ -29,15 +29,19 @@ public class Main {
                     System.out.println(">> Jumlah Kendaraan dalam antrian: " + antri.count());
                     break;
                 case 4:
-                    System.out.println("Petugas melayani " + antri.head.data.platNomor);
-                    System.out.print("Masukkan Jenis BBM: ");
-                    String jenisBBM = sc.nextLine();
-                    System.out.print("Masukkan Harga Per Liter: ");
-                    double hargaPerLiter = sc.nextDouble();
-                    System.out.print("Masukkan Jumlah Liter: ");
-                    double liter = sc.nextDouble();
-                    riwayatTransaksi.Enqueue(new TransaksiPengisian(antri.head.data, new BBM(jenisBBM, hargaPerLiter), (hargaPerLiter * liter), liter));
-                    antri.head = antri.head.next;
+                    if (antri.head != null) {
+                        System.out.println("Petugas melayani " + antri.head.data.platNomor);
+                        System.out.print("Masukkan Jenis BBM: ");
+                        String jenisBBM = sc.nextLine();
+                        System.out.print("Masukkan Harga Per Liter: ");
+                        double hargaPerLiter = sc.nextDouble();
+                        System.out.print("Masukkan Jumlah Liter: ");
+                        double liter = sc.nextDouble();
+                        riwayatTransaksi.Enqueue(new TransaksiPengisian(antri.head.data, new BBM(jenisBBM, hargaPerLiter), (hargaPerLiter * liter), liter));
+                        antri.head = antri.head.next;
+                    } else {
+                        System.out.println("Antrian Kosong");
+                    }
                     break;
                 case 5:
                     riwayatTransaksi.print();
