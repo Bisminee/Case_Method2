@@ -1,10 +1,6 @@
-<<<<<<< HEAD
-// Dicky
-public class TransaksiQueue { 
-=======
 
 public class TransaksiQueue {
->>>>>>> d21b1ae0ea2a16a0720e0fde021a82f30322ed4b
+
 
     TransaksiPengisian data[];
     int front;
