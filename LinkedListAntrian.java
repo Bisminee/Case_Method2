@@ -9,10 +9,6 @@ public class LinkedListAntrian {
         return (head == null);
     }
 
-    boolean isFull() {
-        return (transaksi.IsFull());
-    }
-
     int count() {
         NodeAntrianLinkedList tmp = head;
         if (tmp == null) {
