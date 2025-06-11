@@ -1,5 +1,10 @@
+<<<<<<< HEAD
 // Bisma
 public class LinkedListAntrian { 
+=======
+
+public class LinkedListAntrian {
+>>>>>>> d21b1ae0ea2a16a0720e0fde021a82f30322ed4b
 
     NodeAntrianLinkedList head;
     NodeAntrianLinkedList tail;
@@ -55,7 +60,7 @@ public class LinkedListAntrian {
         }
     }
 
-    public void layaniKendaraan(TransaksiPengisian input) { 
+    public void layaniKendaraan(TransaksiPengisian input) {
         if (head == tail) {
             transaksi.Enqueue(input);
             head = tail = null;
