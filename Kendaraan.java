@@ -1,4 +1,4 @@
-
+// Bisma
 public class Kendaraan {
 
     String platNomor, tipe, merk;

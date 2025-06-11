@@ -1,4 +1,4 @@
-
+// Fika
 public class BBM {
 
     String namaBBM;

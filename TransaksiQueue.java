@@ -1,4 +1,4 @@
-
+// Dicky
 public class TransaksiQueue { 
 
     TransaksiPengisian data[];
