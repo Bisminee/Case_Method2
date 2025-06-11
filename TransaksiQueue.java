@@ -1,7 +1,6 @@
 
 public class TransaksiQueue {
 
-
     TransaksiPengisian data[];
     int front;
     int rear;

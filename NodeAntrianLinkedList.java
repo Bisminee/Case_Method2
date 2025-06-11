@@ -1,4 +1,5 @@
 // Bisma
+
 public class NodeAntrianLinkedList {
 
     Kendaraan data;
