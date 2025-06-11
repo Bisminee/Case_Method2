@@ -44,10 +44,9 @@ public class TransaksiQueue {
         }
     }
 
-    public boolean Enqueue(TransaksiPengisian dt) {
+    public void Enqueue(TransaksiPengisian dt) {
         if (IsFull()) {
             System.out.println("Queue sudah penuh");
-            return false;
         } else {
             if (IsEmpty()) {
                 front = rear = 0;
@@ -61,7 +60,6 @@ public class TransaksiQueue {
             data[rear] = dt;
             size++;
             System.out.println(">> Transaksi berhasil dicatat.");
-            return true;
         }
     }
 
