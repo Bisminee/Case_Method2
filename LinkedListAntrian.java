@@ -15,7 +15,7 @@ public class LinkedListAntrian {
 
     int count() {
         NodeAntrianLinkedList tmp = head;
-            if (tmp == null) {
+        if (tmp == null) {
             return 0;
         }
         int count = 0;

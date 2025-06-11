@@ -52,7 +52,7 @@ public class Main {
     }
 
     public static void menu() {
-        System.out.println("\n --- MENU SPBU --- ");
+        System.out.println("\n--- MENU SPBU ---");
         System.out.println("1. Tambah Antrian Kendaraan");
         System.out.println("2. Tampilkan Antrian");
         System.out.println("3. Cek Jumlah Antrian");
